@@ -1,0 +1,108 @@
+.anatomy-section {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.anatomy-section h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.anatomy-section h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin: 25px 0 8px 0;
+  font-weight: 600;
+}
+
+.anatomy-date {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ecf0f1;
+  margin: 20px 0;
+}
+
+.details-footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 2px solid #ecf0f1;
+}
+
+.details-footer p {
+  color: #3498db;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px;
+  margin-bottom: 1px;
+}
+/* AnatomySection.css additions for loading bar */
+.loading-bar-container {
+  height: 6px;
+  background-color: #e2e8f0;
+  border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.loading-bar1 {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #913801);
+  animation: loading-pulse 1.5s ease-in-out infinite;
+}
+.loading-bar2 {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #38b2ac);
+  animation: loading-pulse 1.5s ease-in-out infinite;
+}
+.loading-bar3 {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #e57f0b);
+  animation: loading-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes loading-pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+.health-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.health-item h3 {
+  margin: 0 0 5px 0;
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+
+.health-date {
+  margin: 0;
+  color: #718096;
+  font-size: 0.9rem;
+}

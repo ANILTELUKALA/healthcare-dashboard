@@ -1,0 +1,18 @@
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8fafc;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}

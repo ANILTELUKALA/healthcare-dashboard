@@ -1,0 +1,8 @@
+.dashboard-overview {
+  margin-bottom: 1rem;
+}
+
+.overview-content {
+  display: flex;
+  gap: 1%;
+}

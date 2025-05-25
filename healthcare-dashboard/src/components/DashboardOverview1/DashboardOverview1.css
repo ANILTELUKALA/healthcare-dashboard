@@ -1,0 +1,82 @@
+/* src/components/DashboardOverview1/DashboardOverview1.css */
+:root {
+  --bg-color: #f8fafc;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --border-color: #e2e8f0;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --spacing-unit: 1rem;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: var(--spacing-unit);
+  background-color: var(--bg-color);
+  min-height: calc(100vh - 80px); /* Adjust based on header height */
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: calc(var(--spacing-unit) * 1.5);
+  margin-bottom: calc(var(--spacing-unit) * 1.5);
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Styling (if needed by child components) */
+.dashboard-card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: calc(var(--spacing-unit) * 1.5);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-unit);
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--primary-color, #4299e1);
+  border-radius: 3px;
+}
+
+/* Animation for loading content */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dashboard-grid > * {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.dashboard-grid > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.dashboard-grid > *:nth-child(2) {
+  animation-delay: 0.2s;
+}

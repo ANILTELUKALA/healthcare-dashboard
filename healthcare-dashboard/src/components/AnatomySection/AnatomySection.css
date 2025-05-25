@@ -1,0 +1,48 @@
+.anatomy-section {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.anatomy-section h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.anatomy-section h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin: 25px 0 8px 0;
+  font-weight: 600;
+}
+
+.anatomy-date {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ecf0f1;
+  margin: 20px 0;
+}
+
+.details-footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 2px solid #ecf0f1;
+}
+
+.details-footer p {
+  color: #3498db;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}

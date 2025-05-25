@@ -1,0 +1,41 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar-title {
+  color: #6c757d;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 20px 5px;
+  margin: 0;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.sidebar-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 0.95rem;
+  color: #495057;
+}
+
+.sidebar-menu li:hover {
+  background-color: #e9ecef;
+}
+
+.sidebar-menu li.active {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  font-weight: 500;
+  border-left: 3px solid #1976d2;
+}
